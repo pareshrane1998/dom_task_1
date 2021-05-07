@@ -153,3 +153,269 @@ sub { bottom: -.25em; }
   font-style: normal;
   font-weight: bold;
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after , *::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: 190px;
+  width: 253px;
+}
+
+li { list-style: none;}
+a {text-decoration: none;}
+
+.container {
+  padding-left: 10.5rem;
+  padding-right: 10.5rem;
+}
+
+body { font-family: sans-serif; background-color: #1f1f1f;}
+
+/* navbar section style */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 32px;
+  /* position: relative;
+  left: 40px; */
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  left: 4%;
+
+  
+  /* padding-bottom: 30px; */
+}
+
+.navbar ul li a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-right: 2.5rem;
+  padding-bottom: 10px;
+  font-size: 0.75rem;
+  color: #b5b5b5;
+}
+
+.current2 {
+  border-bottom: 3px solid #8fd0a6;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid #8fd0a6;
+}
+
+.navbar h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.1rem;
+  color: #fff;
+}
+
+.filter-links {
+  display: flex;
+  margin-bottom: 20px;
+ 
+}
+
+/* .filter-links li {
+  padding: 5px;
+  margin-right: 20px;
+} */
+
+.filter-links {
+  position: relative;
+  padding-top: 16px;
+}
+
+.filter-links::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1px;
+  background: #272727;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  /* bottom: 5px; */
+}
+
+.filter-links li a {
+  display: inline-block;
+  text-transform: capitalize;
+  padding:5px 10px;
+  font-size: 0.7rem;
+  color: #b5b5b5;
+  margin-right: 20px;
+}
+
+.gallery-img ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.gallery-img ul::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #272727;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+
+.bg { background-color: #90cfa5; color: #fff !important;}
+
+/* footer content start */
+
+footer { padding-top: 22px; }
+.footer-content { display: flex; gap: 1.8rem; position: relative; padding-bottom: 8px; }
+.footer-content > * { flex-basis: 100%;}
+
+.footer-content::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #272727;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+/* .footer-content li {
+  margin-right: 35px;
+} */
+
+.footer-content h2 {
+  color: #dedede;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+.footer-content p {
+  font-size: 0.7rem;
+  color: #656565;
+}
+
+.footer-content li:first-child p {
+  /* max-width: 110%; */
+  line-height: 1.6;
+}
+
+.footer-content li:nth-child(2) p {
+  padding-bottom: 10px;
+  /* max-width: 98%; */
+  position: relative;
+}
+
+.footer-content li:nth-child(2) p:not(:last-child):after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #272727;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .footer-links li {
+  flex:33%
+} */
+
+.footer-links li a {
+  font-size: 0.7rem;
+  display: inline-block;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  padding: 7px 10px;
+  color: #fff;
+  background: #8fd0a6;
+}
+
+.footer-links li:nth-child(3) a { background: #c1c1c1;}
+
+.pb {
+  padding-bottom: 13px;
+}
+.pt {
+  padding-top: 11px;
+}
+
+/* footer end */
+
+.footer-end {
+  padding-top: 20px;
+}
+
+footer p {
+  font-size: 0.7rem;
+  color: #7f7f7f;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media a {
+  color: #fff;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.gp::before, .tw::before , .in::before , .pi::before, .fb::before, .db::before {
+  font-family: "Font Awesome 5 Brands"; 
+  font-weight: 900; 
+  content: "\f0d5";
+}
+
+.tw::before { content: "\f099"; }
+.in::before { content: "\f0e1"; }
+.fb::before { content: "\f39e"; }
+.pi::before { content: "\f231";}
+.db::before { content: "\f17d";}
